@@ -1,11 +1,12 @@
-# OpenBao OCI image
+# OpenBao CLI and OCI image
 
-Nix-built x86_64 Linux image using the pinned Nixpkgs OpenBao 2.7.1 package.
+Nix-built x86_64 Linux OCI image and bao CLI from pinned Nixpkgs OpenBao 2.7.1. The standalone CLI is the same OpenBao derivation included in the image.
 
 ## Build
 
 ```sh
 nix flake check
+nix build .#bao
 nix build .#image
 ```
 

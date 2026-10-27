@@ -84,7 +84,7 @@
         };
     in {
       packages.${system} = {
-        inherit image;
+        inherit bao image;
         default = image;
       };
       checks.${system} = {
